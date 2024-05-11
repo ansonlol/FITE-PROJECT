@@ -153,13 +153,6 @@ module.exports = {
       "type": "error"
     },
     {
-      "inputs": [],
-      "name": "mintNFT",
-      "outputs": [],
-      "stateMutability": "payable",
-      "type": "function"
-    },
-    {
       "inputs": [
         {
           "internalType": "address",
@@ -262,6 +255,13 @@ module.exports = {
       ],
       "name": "MetadataUpdate",
       "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "mintNFT",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
     },
     {
       "anonymous": false,
@@ -466,6 +466,19 @@ module.exports = {
       "type": "function"
     },
     {
+      "inputs": [],
+      "name": "currentPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
       "inputs": [
         {
           "internalType": "uint256",
@@ -498,6 +511,19 @@ module.exports = {
         }
       ],
       "name": "isApprovedForAll",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isNFTMinted",
       "outputs": [
         {
           "internalType": "bool",
